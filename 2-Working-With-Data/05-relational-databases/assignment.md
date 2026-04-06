@@ -50,8 +50,22 @@ A database's schema is its table design and structure. The **airports** database
 Create queries to return the following information:
 
 1. all city names in the `Cities` table
+
+-- SQLite
+SELECT city
+FROM cities
+
 1. all cities in Ireland in the `Cities` table
+
+-- SQLite
+SELECT city
+FROM cities
+WHERE country = "Ireland"
+
 1. all airport names with their city and country
+
+
+
 1. all airports in London, United Kingdom
 
 ## Rubric
