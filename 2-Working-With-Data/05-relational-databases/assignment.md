@@ -64,9 +64,19 @@ WHERE country = "Ireland"
 
 1. all airport names with their city and country
 
+-- SQLite
+SELECT airports.name, cities.city, cities.country
+FROM cities
+    INNER JOIN airports ON cities.id = airports.city_id
 
 
 1. all airports in London, United Kingdom
+
+-- SQLite
+SELECT airports.name, cities.city, cities.country
+FROM cities
+    INNER JOIN airports ON cities.id = airports.city_id
+WHERE cities.city = "London"
 
 ## Rubric
 
